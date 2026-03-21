@@ -1,0 +1,5 @@
+fi = open("File.txt", 'r')
+contents = fi.read()
+print("Output using read():")
+print(contents)
+fi.close()
