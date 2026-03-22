@@ -6,6 +6,6 @@ print('*' *30)
 for i in range(1,limt+1):
     
     print(f"{n } * {i} ={n*i}")
-#or
+#or you will get in list
 x=[n*i for i in range(1,limt+1) ]
 print(x)

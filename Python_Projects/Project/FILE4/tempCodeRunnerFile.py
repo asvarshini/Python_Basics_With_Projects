@@ -1,13 +1,19 @@
-# Open file in write mode ("w")
-# If the file doesn't exist, it will be created.
-# If it already exists, its content will be overwritten.
-file = open("Names.txt", 'w')
-file.write("Varshini AS\n")
-file.write("Prathima M\n")
-file.close()
-#if i will append a in it then 
-filr=open("Names.txt", "a")
-print("New content added")
-filr.write("Sridhar k")
-filr.write("Amrutha AS")
-file.close()
+while True:
+    print("1.Add marks ")
+    print("2.Veiw marks")
+    print("3.Exit")
+    choice=int(input("Enter Your choice"))
+    if choice==1:
+        f1=open("Marks.txt","w")
+        name=input("Enter the name of the student")
+        mark=int(input("Enter the marks of student"))
+        f1.write(f"{name}:{mark}\n")
+    elif choice ==2:
+        try:
+            f2=open("Marks.txt",'r')
+            con=f2.read()
+            print(con)
+        except Exception as e:
+            print("File is not found")
+    else:
+        break
